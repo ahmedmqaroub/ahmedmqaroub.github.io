@@ -1,0 +1,173 @@
+.proof-library {
+  padding: 80px 0;
+  background: linear-gradient(180deg, transparent, rgba(168, 85, 247, 0.03));
+}
+
+.proof-library-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 0 40px 0;
+  color: var(--text);
+}
+
+/* Tabs */
+.proof-tabs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 2px;
+}
+
+.proof-tab {
+  padding: 12px 32px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+}
+
+.proof-tab:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.proof-tab.active {
+  color: var(--accent-mint);
+}
+
+.proof-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-mint);
+}
+
+/* Proof Grid */
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.proof-item {
+  aspect-ratio: 3 / 4;
+  border-radius: var(--r-card);
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.proof-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(143, 231, 230, 0.3);
+}
+
+.proof-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.proof-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.proof-placeholder svg {
+  color: var(--border);
+}
+
+.placeholder-label {
+  font-size: 0.75rem;
+  font-family: monospace;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+/* Reviews Testimonials */
+.reviews-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.review-testimonial-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimonial-rating {
+  display: flex;
+  gap: 4px;
+}
+
+.testimonial-quote {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+  flex: 1;
+}
+
+.testimonial-industry {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .proof-library {
+    padding: 60px 0;
+  }
+
+  .proof-library-title {
+    font-size: 2rem;
+  }
+
+  .proof-tabs {
+    gap: 4px;
+  }
+
+  .proof-tab {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .proof-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .reviews-testimonials {
+    grid-template-columns: 1fr;
+  }
+}

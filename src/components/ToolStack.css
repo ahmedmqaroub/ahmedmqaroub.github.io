@@ -1,0 +1,49 @@
+.tool-stack {
+  background: linear-gradient(180deg, rgba(143, 231, 230, 0.02), transparent);
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tool-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.tool-chip svg {
+  flex-shrink: 0;
+  color: var(--accent-mint);
+}
+
+.tool-chip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(143, 231, 230, 0.4);
+  box-shadow: 0 4px 16px rgba(143, 231, 230, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .tools-grid {
+    gap: 12px;
+  }
+
+  .tool-chip {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}

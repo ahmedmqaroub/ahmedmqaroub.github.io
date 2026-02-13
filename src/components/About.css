@@ -1,0 +1,144 @@
+.about {
+  background: radial-gradient(circle at center, rgba(143, 231, 230, 0.03), transparent 60%);
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-header h2 {
+  margin: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-photo {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: sticky;
+  top: 120px;
+}
+
+.photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.photo-placeholder svg {
+  color: var(--border);
+}
+
+.photo-placeholder p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-list-item {
+  padding: 20px 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  position: relative;
+  padding-left: 52px;
+}
+
+.about-list-item::before {
+  content: '✓';
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(143, 231, 230, 0.15);
+  border: 1px solid rgba(143, 231, 230, 0.3);
+  border-radius: 50%;
+  color: var(--accent-mint);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-photo {
+    position: static;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-list-item {
+    padding: 16px 20px 16px 48px;
+    font-size: 0.95rem;
+  }
+
+  .about-list-item::before {
+    left: 16px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .about-list-item {
+  padding-left: 24px;
+  padding-right: 52px;
+}
+
+[dir="rtl"] .about-list-item::before {
+  left: auto;
+  right: 20px;
+}
+
+@media (max-width: 640px) {
+  [dir="rtl"] .about-list-item {
+    padding-left: 20px;
+    padding-right: 48px;
+  }
+
+  [dir="rtl"] .about-list-item::before {
+    right: 16px;
+  }
+}
