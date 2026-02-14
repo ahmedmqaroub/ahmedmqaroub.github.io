@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>أحمد مسعد — Growth & Performance Marketer</title>
+  <meta name="description" content="أحمد مسعد — متخصص في Performance Marketing و Growth. خبرة في Meta Ads, Google Ads, TikTok Ads. أطلب Brief مجاني عبر WhatsApp." />
+  <link rel="canonical" href="https://ahmedmqaroub.github.io/" /><!-- TODO: Update canonical URL -->
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="أحمد مسعد — Growth & Performance Marketer" />
+  <meta property="og:description" content="Performance Marketing specialist. Meta Ads, Google Ads, TikTok Ads expert. Request a free brief via WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ahmedmqaroub.github.io/" /><!-- TODO: Update OG URL -->
+  <meta property="og:image" content="https://ahmedmqaroub.github.io/assets/og-image.jpg" /><!-- TODO: Add OG image -->
+  <meta property="og:locale" content="ar_EG" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="أحمد مسعد — Growth & Performance Marketer" />
+  <meta name="twitter:description" content="Performance Marketing specialist. Meta Ads, Google Ads, TikTok Ads expert." />
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmed Musaad",
+    "alternateName": "أحمد مسعد",
+    "jobTitle": "Growth & Performance Marketer",
+    "url": "https://ahmedmqaroub.github.io/",
+    "areaServed": ["EG", "SA", "AE", "KW", "QA", "BH", "OM", "JO"],
+    "knowsAbout": [
+      "Performance Marketing",
+      "Meta Ads",
+      "Google Ads",
+      "TikTok Ads",
+      "Snapchat Ads",
+      "Google Tag Manager",
+      "GA4",
+      "Conversion API (CAPI)",
+      "Looker Studio",
+      "Growth Strategy"
+    ],
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- GA4 — TODO: Replace G-XXXXXXXXXX with real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel — TODO: Replace YOUR_PIXEL_ID with real ID -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+
+  <!-- Critical inline style: prevent white flash -->
+  <style>
+    html, body { margin: 0; padding: 0; background: #05060A; color: #E8ECFF; }
+    .skip-link { position: absolute; top: -100%; left: 0; background: #FF3B1D; color: #fff; padding: 8px 16px; z-index: 10000; font-family: 'Inter', sans-serif; text-decoration: none; border-radius: 0 0 8px 0; }
+    .skip-link:focus { top: 0; }
+  </style>
+</head>
+<body>
+  <!-- Skip Link -->
+  <a class="skip-link" href="#home" data-i18n="skipLink">تخطي إلى المحتوى</a>
+
+  <!-- Navbar -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="navbar__inner container">
+      <a href="#home" class="navbar__logo" aria-label="Ahmed Musaad">
+        <img src="assets/logo.svg" alt="Ahmed Musaad Logo" width="40" height="40" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <span class="navbar__logo-fallback" style="display:none;" data-i18n="logoFallback">AM</span>
+      </a>
+      <nav class="navbar__links" role="navigation" aria-label="Main Navigation">
+        <a href="#wins" class="nav-link" data-section="wins" data-i18n="navWins">الإنجازات</a>
+        <a href="#services" class="nav-link" data-section="services" data-i18n="navServices">الخدمات</a>
+        <a href="#tool-stack" class="nav-link" data-section="tool-stack" data-i18n="navTools">الأدوات</a>
+        <a href="#case-studies" class="nav-link" data-section="case-studies" data-i18n="navCases">دراسات حالة</a>
+        <a href="#about" class="nav-link" data-section="about" data-i18n="navAbout">عن أحمد</a>
+        <a href="#contact" class="nav-link" data-section="contact" data-i18n="navContact">تواصل</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">EN</button>
+        <button class="btn btn--accent btn--sm nav-wa-btn" data-wa-position="top" data-i18n="navCTA">ابدأ Brief</button>
+        <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div id="mobileNav" class="mobile-nav" role="dialog" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-nav__overlay"></div>
+    <div class="mobile-nav__drawer">
+      <nav class="mobile-nav__links">
+        <a href="#home" class="mobile-nav-link" data-section="home" data-i18n="navHome">الرئيسية</a>
+        <a href="#wins" class="mobile-nav-link" data-section="wins" data-i18n="navWins">الإنجازات</a>
+        <a href="#services" class="mobile-nav-link" data-section="services" data-i18n="navServices">الخدمات</a>
+        <a href="#tool-stack" class="mobile-nav-link" data-section="tool-stack" data-i18n="navTools">الأدوات</a>
+        <a href="#case-studies" class="mobile-nav-link" data-section="case-studies" data-i18n="navCases">دراسات حالة</a>
+        <a href="#about" class="mobile-nav-link" data-section="about" data-i18n="navAbout">عن أحمد</a>
+        <a href="#process" class="mobile-nav-link" data-section="process" data-i18n="navProcess">المنهجية</a>
+        <a href="#contact" class="mobile-nav-link" data-section="contact" data-i18n="navContact">تواصل</a>
+      </nav>
+      <button class="btn btn--accent mobile-nav__wa" data-wa-position="top" data-i18n="navCTA">ابدأ Brief</button>
+    </div>
+  </div>
+
+  <!-- Chapter HUD -->
+  <div id="chapterHUD" class="chapter-hud" aria-live="polite" aria-atomic="true">
+    <span class="chapter-hud__number">01</span>
+    <span class="chapter-hud__label" data-i18n="chapterSignal">Signal</span>
+    <div class="chapter-hud__progress"><div class="chapter-hud__bar"></div></div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="section section--hero" aria-labelledby="heroHeading">
+      <div class="hero container">
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-i18n="heroEyebrow">Growth & Performance Marketer</p>
+          <h1 id="heroHeading" class="hero__title" data-i18n="heroTitle">ميزانيتك تستاهل تشتغل <span class="text-accent">صح</span></h1>
+          <p class="hero__sub" data-i18n="heroSub">بحول الـ Ad Spend لنتائج حقيقية — Leads, Sales, و Growth مستمر. Meta Ads · Google Ads · TikTok Ads</p>
+          <div class="hero__actions">
+            <button class="btn btn--accent btn--lg hero-wa-btn" data-wa-position="hero" data-i18n="heroCTA">ابدأ Brief مجاني</button>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__value">+15M</span>
+              <span class="stat__label" data-i18n="statAdSpend">Ad Spend Managed</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">+200%</span>
+              <span class="stat__label" data-i18n="statROAS">Avg ROAS Improvement</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">50+</span>
+              <span class="stat__label" data-i18n="statClients">Clients Served</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__dashboard glass-card">
+            <div class="hero__dash-header">
+              <span class="hero__dash-dot hero__dash-dot--red"></span>
+              <span class="hero__dash-dot hero__dash-dot--yellow"></span>
+              <span class="hero__dash-dot hero__dash-dot--green"></span>
+            </div>
+            <div class="hero__dash-body">
+              <div class="hero__dash-metric">
+                <span class="hero__dash-metric-label">ROAS</span>
+                <span class="hero__dash-metric-value">4.8x</span>
+              </div>
+              <div class="hero__dash-metric">
+                <span class="hero__dash-metric-label">CPA</span>
+                <span class="hero__dash-metric-value">-42%</span>
+              </div>
+              <div class="hero__dash-metric">
+                <span class="hero__dash-metric-label">Conv. Rate</span>
+                <span class="hero__dash-metric-value">+67%</span>
+              </div>
+              <div class="hero__dash-chart">
+                <svg viewBox="0 0 200 60" class="hero__sparkline" aria-hidden="true">
+                  <polyline points="0,55 20,45 40,48 60,30 80,35 100,20 120,25 140,12 160,15 180,5 200,8" fill="none" stroke="var(--accent-mint)" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="hero__me-wrapper">
+            <img src="assets/me.jpg" alt="Ahmed Musaad" class="hero__me" width="280" height="280" loading="eager" onerror="this.parentElement.classList.add('placeholder-avatar');" />
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="var(--muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </section>
+
+    <!-- ==================== WINS ==================== -->
+    <section id="wins" class="section section--wins" aria-labelledby="winsHeading">
+      <div class="container">
+        <h2 id="winsHeading" class="section__title" data-i18n="winsTitle">إنجازات تتكلم</h2>
+        <p class="section__sub" data-i18n="winsSub">نتائج حقيقية من حملات حقيقية</p>
+        <div class="wins__stack" id="winsStack">
+          <!-- Win Card 1 -->
+          <div class="win-card glass-card" data-win="1">
+            <div class="win-card__rating" data-rating="5">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <blockquote class="win-card__quote" data-i18n="win1Quote">"أحمد حوّل حملاتنا من خسارة لربح في أقل من شهر. ROAS طلع من 1.2x لـ 4.8x"</blockquote>
+            <div class="win-card__meta">
+              <span class="win-card__author" data-i18n="win1Author">محمد — CEO, E-commerce Brand</span>
+              <span class="win-card__result">ROAS 4.8x</span>
+            </div>
+          </div>
+          <!-- Win Card 2 -->
+          <div class="win-card glass-card" data-win="2">
+            <div class="win-card__rating" data-rating="5">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <blockquote class="win-card__quote" data-i18n="win2Quote">"الـ Cost per Lead نزل 60% والـ Quality اتحسنت. شغل محترف جداً"</blockquote>
+            <div class="win-card__meta">
+              <span class="win-card__author" data-i18n="win2Author">سارة — Marketing Director, Real Estate</span>
+              <span class="win-card__result">CPL -60%</span>
+            </div>
+          </div>
+          <!-- Win Card 3 -->
+          <div class="win-card glass-card" data-win="3">
+            <div class="win-card__rating" data-rating="4.5">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star half">★</span>
+            </div>
+            <blockquote class="win-card__quote" data-i18n="win3Quote">"بعد ما جرّبنا 3 agencies، أحمد هو اللي فعلاً فهم الـ Funnel بتاعنا وظبطه"</blockquote>
+            <div class="win-card__meta">
+              <span class="win-card__author" data-i18n="win3Author">خالد — Founder, SaaS Startup</span>
+              <span class="win-card__result">Pipeline +180%</span>
+            </div>
+          </div>
+          <!-- Win Card 4 -->
+          <div class="win-card glass-card" data-win="4">
+            <div class="win-card__rating" data-rating="5">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <blockquote class="win-card__quote" data-i18n="win4Quote">"مش بس Ads — أحمد بنالنا Tracking setup كامل: GTM, Pixel, CAPI, GA4. كل حاجة measurable"</blockquote>
+            <div class="win-card__meta">
+              <span class="win-card__author" data-i18n="win4Author">ليلى — COO, Fashion Brand</span>
+              <span class="win-card__result">Full Tracking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services" class="section section--services" aria-labelledby="servicesHeading">
+      <div class="container">
+        <h2 id="servicesHeading" class="section__title" data-i18n="servicesTitle">الخدمات</h2>
+        <p class="section__sub" data-i18n="servicesSub">كل اللي محتاجه عشان الـ Ads تشتغل صح</p>
+        <div class="services__grid">
+          <div class="service-card glass-card" data-service="media-buying">
+            <div class="service-card__icon">📊</div>
+            <h3 class="service-card__title" data-i18n="svc1Title">Media Buying & Management</h3>
+            <p class="service-card__desc" data-i18n="svc1Desc">Meta Ads · Google Ads · TikTok Ads · Snapchat Ads — إدارة كاملة من الاستراتيجية للتنفيذ والتحسين اليومي</p>
+          </div>
+          <div class="service-card glass-card" data-service="tracking">
+            <div class="service-card__icon">🎯</div>
+            <h3 class="service-card__title" data-i18n="svc2Title">Tracking & Attribution</h3>
+            <p class="service-card__desc" data-i18n="svc2Desc">GTM · Pixel · CAPI · GA4 · Looker Studio — Setup كامل عشان كل Conversion يتتبع صح</p>
+          </div>
+          <div class="service-card glass-card" data-service="strategy">
+            <div class="service-card__icon">🚀</div>
+            <h3 class="service-card__title" data-i18n="svc3Title">Growth Strategy</h3>
+            <p class="service-card__desc" data-i18n="svc3Desc">تحليل الـ Funnel · Audience Research · Budget Allocation · Scaling Plan</p>
+          </div>
+          <div class="service-card glass-card" data-service="creative">
+            <div class="service-card__icon">🎨</div>
+            <h3 class="service-card__title" data-i18n="svc4Title">Creative Strategy</h3>
+            <p class="service-card__desc" data-i18n="svc4Desc">Ad Copy · Creative Direction · A/B Testing Frameworks · UGC Briefs</p>
+          </div>
+          <div class="service-card glass-card" data-service="reporting">
+            <div class="service-card__icon">📈</div>
+            <h3 class="service-card__title" data-i18n="svc5Title">Reporting & Dashboards</h3>
+            <p class="service-card__desc" data-i18n="svc5Desc">Looker Studio dashboards مخصصة — بتشوف الأرقام اللي فعلاً بتأثر على الـ Business</p>
+          </div>
+          <div class="service-card glass-card" data-service="audit">
+            <div class="service-card__icon">🔍</div>
+            <h3 class="service-card__title" data-i18n="svc6Title">Account Audit</h3>
+            <p class="service-card__desc" data-i18n="svc6Desc">تحليل شامل للـ Ad Accounts الحالية مع خطة تحسين واضحة</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TOOL STACK ==================== -->
+    <section id="tool-stack" class="section section--tools" aria-labelledby="toolsHeading">
+      <div class="container">
+        <h2 id="toolsHeading" class="section__title" data-i18n="toolsTitle">Tool Stack</h2>
+        <p class="section__sub" data-i18n="toolsSub">الأدوات اللي بشتغل بيها كل يوم</p>
+        <div class="tools__grid">
+          <div class="tool-badge glass-card"><span>Meta Ads</span></div>
+          <div class="tool-badge glass-card"><span>Google Ads</span></div>
+          <div class="tool-badge glass-card"><span>TikTok Ads</span></div>
+          <div class="tool-badge glass-card"><span>Snapchat Ads</span></div>
+          <div class="tool-badge glass-card"><span>Google Tag Manager</span></div>
+          <div class="tool-badge glass-card"><span>GA4</span></div>
+          <div class="tool-badge glass-card"><span>Meta Pixel</span></div>
+          <div class="tool-badge glass-card"><span>CAPI</span></div>
+          <div class="tool-badge glass-card"><span>Looker Studio</span></div>
+          <div class="tool-badge glass-card"><span>Google Sheets</span></div>
+          <div class="tool-badge glass-card"><span>Hotjar</span></div>
+          <div class="tool-badge glass-card"><span>Zapier</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CASE STUDIES ==================== -->
+    <section id="case-studies" class="section section--cases" aria-labelledby="casesHeading">
+      <div class="container">
+        <h2 id="casesHeading" class="section__title" data-i18n="casesTitle">دراسات حالة</h2>
+        <p class="section__sub" data-i18n="casesSub">من التحدي للنتيجة — القصة الكاملة</p>
+      </div>
+      <div class="cases__rail-wrapper" id="casesRailWrapper">
+        <div class="cases__progress"><div class="cases__progress-bar" id="casesProgressBar"></div></div>
+        <div class="cases__rail" id="casesRail">
+          <!-- Case 1 -->
+          <article class="case-card glass-card">
+            <div class="case-card__badge" data-i18n="caseIndustry1">E-commerce</div>
+            <h3 class="case-card__title" data-i18n="case1Title">Fashion Brand — ROAS من 1.2x لـ 4.8x</h3>
+            <div class="case-card__stats">
+              <div class="case-stat"><span class="case-stat__value">4.8x</span><span class="case-stat__label">ROAS</span></div>
+              <div class="case-stat"><span class="case-stat__value">-42%</span><span class="case-stat__label">CPA</span></div>
+              <div class="case-stat"><span class="case-stat__value">+300%</span><span class="case-stat__label">Revenue</span></div>
+            </div>
+            <p class="case-card__desc" data-i18n="case1Desc">إعادة هيكلة كاملة للـ Ad Account: Audience Segmentation, Creative Testing, CAPI Setup. النتيجة: ROAS اتضاعف 4 مرات في 45 يوم.</p>
+          </article>
+          <!-- Case 2 -->
+          <article class="case-card glass-card">
+            <div class="case-card__badge" data-i18n="caseIndustry2">Real Estate</div>
+            <h3 class="case-card__title" data-i18n="case2Title">Developer — CPL من $25 لـ $10</h3>
+            <div class="case-card__stats">
+              <div class="case-stat"><span class="case-stat__value">-60%</span><span class="case-stat__label">CPL</span></div>
+              <div class="case-stat"><span class="case-stat__value">+150%</span><span class="case-stat__label">Leads</span></div>
+              <div class="case-stat"><span class="case-stat__value">3x</span><span class="case-stat__label">Quality</span></div>
+            </div>
+            <p class="case-card__desc" data-i18n="case2Desc">Funnel Redesign + Lead Scoring + Retargeting Strategy. الـ Lead Quality اتحسنت 3 أضعاف والتكلفة نزلت 60%.</p>
+          </article>
+          <!-- Case 3 -->
+          <article class="case-card glass-card">
+            <div class="case-card__badge" data-i18n="caseIndustry3">SaaS</div>
+            <h3 class="case-card__title" data-i18n="case3Title">B2B SaaS — Pipeline +180%</h3>
+            <div class="case-card__stats">
+              <div class="case-stat"><span class="case-stat__value">+180%</span><span class="case-stat__label">Pipeline</span></div>
+              <div class="case-stat"><span class="case-stat__value">-35%</span><span class="case-stat__label">CAC</span></div>
+              <div class="case-stat"><span class="case-stat__value">$2.1M</span><span class="case-stat__label">Revenue</span></div>
+            </div>
+            <p class="case-card__desc" data-i18n="case3Desc">Google Ads + LinkedIn Strategy مع Full-funnel Tracking. الـ Pipeline زاد 180% في 3 شهور.</p>
+          </article>
+          <!-- Case 4 -->
+          <article class="case-card glass-card">
+            <div class="case-card__badge" data-i18n="caseIndustry4">F&B</div>
+            <h3 class="case-card__title" data-i18n="case4Title">Restaurant Chain — Orders +220%</h3>
+            <div class="case-card__stats">
+              <div class="case-stat"><span class="case-stat__value">+220%</span><span class="case-stat__label">Orders</span></div>
+              <div class="case-stat"><span class="case-stat__value">$3.2</span><span class="case-stat__label">CPO</span></div>
+              <div class="case-stat"><span class="case-stat__value">12x</span><span class="case-stat__label">ROAS</span></div>
+            </div>
+            <p class="case-card__desc" data-i18n="case4Desc">TikTok Ads + Snapchat Ads مع Location Targeting. الـ Orders زادت 220% والـ CPO وصل $3.2.</p>
+          </article>
+          <!-- Case 5 -->
+          <article class="case-card glass-card">
+            <div class="case-card__badge" data-i18n="caseIndustry5">Healthcare</div>
+            <h3 class="case-card__title" data-i18n="case5Title">Clinic — Bookings +340%</h3>
+            <div class="case-card__stats">
+              <div class="case-stat"><span class="case-stat__value">+340%</span><span class="case-stat__label">Bookings</span></div>
+              <div class="case-stat"><span class="case-stat__value">-55%</span><span class="case-stat__label">CPA</span></div>
+              <div class="case-stat"><span class="case-stat__value">5.2x</span><span class="case-stat__label">ROAS</span></div>
+            </div>
+            <p class="case-card__desc" data-i18n="case5Desc">Meta Ads + Google Ads مع Booking Funnel Optimization. الـ Bookings زادت 340%.</p>
+          </article>
+          <!-- Case 6 -->
+          <article class="case-card glass-card">
+            <div class="case-card__badge" data-i18n="caseIndustry6">Education</div>
+            <h3 class="case-card__title" data-i18n="case6Title">EdTech — Enrollments +400%</h3>
+            <div class="case-card__stats">
+              <div class="case-stat"><span class="case-stat__value">+400%</span><span class="case-stat__label">Enrollments</span></div>
+              <div class="case-stat"><span class="case-stat__value">$1.8</span><span class="case-stat__label">CPE</span></div>
+              <div class="case-stat"><span class="case-stat__value">8x</span><span class="case-stat__label">ROAS</span></div>
+            </div>
+            <p class="case-card__desc" data-i18n="case6Desc">Full-funnel Strategy: Awareness → Consideration → Enrollment. Meta + Google + TikTok. النتيجة: 4x Enrollments في أول Quarter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROOF LIBRARY ==================== -->
+    <section id="proof-library" class="section section--proof" aria-labelledby="proofHeading">
+      <div class="container">
+        <h2 id="proofHeading" class="section__title" data-i18n="proofTitle">مكتبة الإثبات</h2>
+        <p class="section__sub" data-i18n="proofSub">Screenshots حقيقية من Dashboards و Ad Accounts</p>
+        <div class="proof__tabs" role="tablist" aria-label="Proof categories">
+          <button role="tab" class="proof__tab active" aria-selected="true" aria-controls="panel-ads" id="tab-ads" data-i18n="proofTabAds">Ad Results</button>
+          <button role="tab" class="proof__tab" aria-selected="false" aria-controls="panel-reviews" id="tab-reviews" data-i18n="proofTabReviews">Client Reviews</button>
+        </div>
+        <div role="tabpanel" id="panel-ads" class="proof__panel active" aria-labelledby="tab-ads">
+          <div class="proof__grid" id="proofGridAds">
+            <!-- Populated by JS with skeleton fallbacks -->
+          </div>
+        </div>
+        <div role="tabpanel" id="panel-reviews" class="proof__panel" aria-labelledby="tab-reviews" hidden>
+          <div class="proof__grid" id="proofGridReviews">
+            <!-- Populated by JS with skeleton fallbacks -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section section--about" aria-labelledby="aboutHeading">
+      <div class="container">
+        <h2 id="aboutHeading" class="section__title" data-i18n="aboutTitle">عن أحمد</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p data-i18n="aboutP1">متخصص في Performance Marketing و Growth من أكتر من 5 سنين. شغلت مع Brands في مصر والسعودية والإمارات والكويت وقطر والبحرين وعمان والأردن.</p>
+            <p data-i18n="aboutP2">فلسفتي بسيطة: كل جنيه Ad Spend لازم يكون Measurable و Accountable. مش بشتغل بالإحساس — بشتغل بالـ Data.</p>
+            <p data-i18n="aboutP3">بتعامل مع كل Client كأنه Partner — هدفي إن الـ Growth يكون مستدام مش مؤقت.</p>
+          </div>
+          <div class="about__highlights">
+            <div class="about__highlight glass-card">
+              <span class="about__highlight-value">+5</span>
+              <span class="about__highlight-label" data-i18n="aboutYears">سنين خبرة</span>
+            </div>
+            <div class="about__highlight glass-card">
+              <span class="about__highlight-value">8</span>
+              <span class="about__highlight-label" data-i18n="aboutMarkets">أسواق</span>
+            </div>
+            <div class="about__highlight glass-card">
+              <span class="about__highlight-value">+15M</span>
+              <span class="about__highlight-label" data-i18n="aboutSpend">Ad Spend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section id="process" class="section section--process" aria-labelledby="processHeading">
+      <div class="container">
+        <h2 id="processHeading" class="section__title" data-i18n="processTitle">المنهجية</h2>
+        <p class="section__sub" data-i18n="processSub">خطوات واضحة من أول Brief لحد الـ Scale</p>
+        <div class="process__steps">
+          <div class="process__step glass-card">
+            <span class="process__step-num">01</span>
+            <h3 data-i18n="step1Title">Brief & Audit</h3>
+            <p data-i18n="step1Desc">بنفهم الـ Business وبنعمل Audit كامل للـ Current Setup</p>
+          </div>
+          <div class="process__step glass-card">
+            <span class="process__step-num">02</span>
+            <h3 data-i18n="step2Title">Strategy & Setup</h3>
+            <p data-i18n="step2Desc">بنحط الخطة وبنظبط الـ Tracking والـ Audiences والـ Creatives</p>
+          </div>
+          <div class="process__step glass-card">
+            <span class="process__step-num">03</span>
+            <h3 data-i18n="step3Title">Launch & Optimize</h3>
+            <p data-i18n="step3Desc">بنطلق الحملات وبنعمل Daily Optimization based on Data</p>
+          </div>
+          <div class="process__step glass-card">
+            <span class="process__step-num">04</span>
+            <h3 data-i18n="step4Title">Scale & Report</h3>
+            <p data-i18n="step4Desc">بنكبّر اللي بيشتغل وبنقدم Reports واضحة كل أسبوع</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section section--contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <h2 id="contactHeading" class="section__title" data-i18n="contactTitle">ابدأ Brief</h2>
+        <p class="section__sub" data-i18n="contactSub">املا البيانات وهتوصلني مباشرة على WhatsApp</p>
+
+        <!-- Audience Selector -->
+        <div class="audience-selector" role="radiogroup" aria-label="Select audience type">
+          <button class="audience-btn active" data-audience="company" role="radio" aria-checked="true" data-i18n="audCompany">شركة / Brand</button>
+          <button class="audience-btn" data-audience="fulltime" role="radio" aria-checked="false" data-i18n="audFulltime">وظيفة Full-time</button>
+          <button class="audience-btn" data-audience="agency" role="radio" aria-checked="false" data-i18n="audAgency">Agency</button>
+          <button class="audience-btn" data-audience="freelance" role="radio" aria-checked="false" data-i18n="audFreelance">مشروع Freelance</button>
+        </div>
+
+        <!-- Quick Brief Form -->
+        <form id="briefForm" class="brief-form glass-card" novalidate>
+          <div class="brief-form__row">
+            <div class="brief-form__field">
+              <label for="briefCompany" data-i18n="formCompany">اسم الشركة</label>
+              <input type="text" id="briefCompany" name="company" placeholder="Company name" autocomplete="organization" />
+            </div>
+            <div class="brief-form__field">
+              <label for="briefMarket" data-i18n="formMarket">السوق</label>
+              <input type="text" id="briefMarket" name="market" placeholder="e.g. Egypt, Saudi, UAE" />
+            </div>
+          </div>
+          <div class="brief-form__row">
+            <div class="brief-form__field">
+              <label for="briefBudget" data-i18n="formBudget">الميزانية الشهرية</label>
+              <input type="text" id="briefBudget" name="budget" placeholder="e.g. $5,000" />
+            </div>
+            <div class="brief-form__field">
+              <label for="briefGoal" data-i18n="formGoal">الهدف</label>
+              <select id="briefGoal" name="goal">
+                <option value="">Select goal</option>
+                <option value="Leads">Leads</option>
+                <option value="Sales">Sales</option>
+                <option value="Both">Leads & Sales</option>
+              </select>
+            </div>
+          </div>
+          <div class="brief-form__row">
+            <div class="brief-form__field brief-form__field--full">
+              <label for="briefWebsite" data-i18n="formWebsite">Website / Instagram</label>
+              <input type="text" id="briefWebsite" name="website" placeholder="https:// or @handle" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn--accent btn--lg brief-form__submit" data-wa-position="contact" data-i18n="formSubmit">أرسل Brief على WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p data-i18n="footerText">© 2026 Ahmed Musaad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <button id="floatingWA" class="floating-wa" aria-label="Contact on WhatsApp" data-wa-position="floating">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16.004 0C7.17 0 .002 7.168.002 16.002c0 2.822.737 5.577 2.137 8.002L0 32l8.188-2.104A15.93 15.93 0 0 0 16.004 32C24.838 32 32 24.832 32 16.002 32 7.168 24.838 0 16.004 0zm0 29.37a13.32 13.32 0 0 1-7.176-2.088l-.514-.306-5.334 1.37 1.424-5.196-.334-.534a13.3 13.3 0 0 1-2.042-7.114c0-7.39 6.016-13.4 13.41-13.4 7.39 0 13.4 6.01 13.4 13.4 0 7.394-6.01 13.41-13.4 13.41h-.034v-.542zm7.36-10.03c-.402-.202-2.38-1.176-2.75-1.31-.37-.134-.638-.202-.906.202-.268.402-1.04 1.31-1.274 1.578-.234.268-.47.302-.872.1-.402-.202-1.696-.626-3.23-1.994-1.194-1.066-2-2.382-2.234-2.784-.234-.402-.024-.62.176-.82.18-.18.402-.468.604-.702.2-.234.268-.402.402-.67.134-.268.068-.502-.034-.702-.1-.202-.906-2.18-1.24-2.986-.328-.784-.66-.678-.906-.69-.234-.012-.502-.014-.77-.014-.268 0-.704.1-1.072.502-.37.402-1.41 1.376-1.41 3.356s1.444 3.892 1.646 4.16c.2.268 2.84 4.338 6.882 6.082.962.414 1.714.662 2.3.848.966.308 1.846.264 2.542.16.776-.116 2.38-.974 2.716-1.914.336-.94.336-1.746.234-1.914-.1-.168-.37-.268-.772-.47z"/></svg>
+  </button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Image viewer" aria-hidden="true">
+    <div class="lightbox__overlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" aria-label="Close">&times;</button>
+      <button class="lightbox__prev" aria-label="Previous">&#8592;</button>
+      <div class="lightbox__img-wrapper">
+        <img class="lightbox__img" src="" alt="Proof screenshot" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="lightbox__placeholder" style="display:none;">
+          <span class="lightbox__placeholder-label"></span>
+        </div>
+      </div>
+      <button class="lightbox__next" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+
+  <!-- Ambient layers -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grain"></div>
+    <div class="ambient__orb ambient__orb--1"></div>
+    <div class="ambient__orb ambient__orb--2"></div>
+    <div class="ambient__orb ambient__orb--3"></div>
+    <div class="ambient__vignette"></div>
+    <div class="ambient__grid"></div>
+  </div>
+
+  <!-- Entry point -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<!-- This is a placeholder. Replace with your actual logo SVG. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect width="40" height="40" rx="20" fill="#FF3B1D"/>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Inter,system-ui,sans-serif" font-weight="700" font-size="16">AM</text>
+</svg>
